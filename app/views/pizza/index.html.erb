@@ -1,0 +1,19 @@
+
+    <div class="header_img">
+      <%= image_tag "pizza_header.jpg", width: "100%" %>
+    </div>
+    <div class="content">
+      <h1>
+        <%= @title.html_safe %>
+      </h1>
+    
+      <p>Pizza is a traditional Italian dish consisting of a yeasted flatbread typically topped with
+tomato sauce and cheese and baked in an oven. It can also be topped with additional
+vegetables, meats, and condiments, and can be made without cheese.</p>
+      <a href="https://en.wikipedia.org/wiki/Pizza">Read More on Wikipedia</a>
+    </div>
+    <div class="about_section">
+      <%= image_tag "about_pizza.jpg", class: "bordered" %>
+    </div>
+    <br />
+    <a href="/pizza/about">About Pizza</a>

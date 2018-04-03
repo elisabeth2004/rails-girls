@@ -1,0 +1,17 @@
+<h1>Contact Us</h1>
+
+
+<p>
+  <%= form_tag "/pizza/contact" do %>
+    <%= radio_button_tag :pizza_type, 'Margarita' %>
+    <%= label_tag :pizza_type_Margarita, "Margarita" %>
+    <br />
+    <%= radio_button_tag :pizza_type, 'Cheese' %>
+    <%= label_tag :pizza_type_Cheese, "Cheese" %>
+    <br/>
+    <%= text_area_tag :description, "", rows: 10, cols: 100 %>
+    <br/>
+    <%= submit_tag "Save" %>
+  <% end %>
+</p>
+<%= params[:description] %>
